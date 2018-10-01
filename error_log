@@ -1,0 +1,11 @@
+[29-Apr-2016 00:41:01 UTC] PHP Fatal error:  Call to undefined function have_rows() in /home2/joshubg0/public_html/projects/neighborhoods/wp-content/themes/Neighborhoods_Cafe/header-2.php on line 35
+[01-Oct-2018 18:08:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method NF_Form::get_forms() in /tmp/wp_contact_extractor/wp_contact_extractor.php:561
+Stack trace:
+#0 /tmp/wp_contact_extractor/wp_contact_extractor.php(72): bluerock_export_ninja_forms()
+#1 phar:///usr/local/bin/wp/vendor/wp-cli/eval-command/src/EvalFile_Command.php(46): include('/tmp/wp_contact...')
+#2 phar:///usr/local/bin/wp/vendor/wp-cli/eval-command/src/EvalFile_Command.php(39): EvalFile_Command::_eval('/tmp/wp_contact...', Array)
+#3 [internal function]: EvalFile_Command->__invoke(Array, Array)
+#4 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/CommandFactory.php(89): call_user_func(Array, Array, Array)
+#5 [internal function]: WP_CLI\Dispatcher\CommandFactory::WP_CLI\Dispatcher\{closure}(Array, Array)
+#6 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/Subcommand.php(425): call_user_func(Object(Closure), Array, Array)
+#7 phar:///usr/local/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(365): WP_CLI\Dispatcher\Subcommand->invoke(A in /tmp/wp_contact_extractor/wp_contact_extractor.php on line 561

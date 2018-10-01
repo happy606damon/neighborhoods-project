@@ -1,0 +1,1 @@
+[27-Feb-2017 11:25:32 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home2/joshubg0/public_html/projects/neighborhoods/wp-content/plugins/hello.php on line 60

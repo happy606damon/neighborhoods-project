@@ -1,0 +1,6 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#dashTabLogo{height: 75px; width: auto;}
+
+#adminmenu #toplevel_page_nhc-menu div.wp-menu-image.dashicons-carrot::before{color: #591902!important;}

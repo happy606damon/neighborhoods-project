@@ -1,0 +1,254 @@
+
+.grid {
+	position: relative;
+	margin: 0 auto;
+	padding: 1em 0 1em;
+/*	max-width: 1000px;*/
+	list-style: none;
+	text-align: center;
+}
+
+/* Common style */
+.grid figure {
+	position: relative;
+	overflow: hidden;
+	/*margin: 10px 1%;
+	min-width: 320px;
+	max-width: 480px;
+	max-height: 360px;
+	width: 48%;*/
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+	padding-top: 0%;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	width: 100%;
+	/*height: 350px;*/
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+/*	text-transform: uppercase;*/
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*width: 100%;*/
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	font-family: 'Myriad Pro Bold';
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 30px;
+    font-size: 52px;
+    text-transform: capitalize;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	font-family: 'Myriad Pro Regular';
+	letter-spacing: 1px;
+	font-size: 18px;
+	line-height: 28px;
+}
+
+/*---------------*/
+/***** Ruby *****/
+/*---------------*/
+
+figure.effect-ruby {
+	background-color: #0a3c50;
+}
+
+figure.effect-ruby img {
+	opacity: 0.7;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(1.15);
+	transform: scale(1.15);
+}
+
+figure.effect-ruby:hover img {
+	opacity: 0.2;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect-ruby h2 {
+	margin-top: 8%;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,20px,0);
+	transform: translate3d(0,20px,0);
+}
+
+figure.effect-ruby p {
+	margin: 4em;
+	padding: 5em;
+	border: 1px solid #fff;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,20px,0) scale(1.1);
+	transform: translate3d(0,20px,0) scale(1.1);
+} 
+
+figure.effect-ruby:hover h2 {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-ruby:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0) scale(1);
+	transform: translate3d(0,0,0) scale(1);
+}
+
+@media only screen and (min-width: 1081px) and (max-width: 1280px) {
+	figure.effect-ruby p {
+		margin: 4em;
+		padding: 2em;
+	}
+}
+
+@media only screen and (min-width: 961px) and (max-width: 1080px) {
+	figure.effect-ruby h2 {
+		margin-top: 3%;
+	}
+	figure.effect-ruby p {
+		margin: 3em;
+		padding: 1.5em;
+	}
+}
+
+@media only screen and (min-width: 628px) and (max-width: 960px) {
+	.grid figure h2 {
+	font-family: 'Myriad Pro Semibold';
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 30px;
+    font-size: 50px;
+    padding-top: 10%;
+    text-transform: capitalize;
+  	display: block;
+	}
+	.grid figure p {
+	font-family: 'Myriad Pro Regular';
+	letter-spacing: 0px;
+	font-size: 18px;
+	line-height: 22px;
+	}
+	.grid figure figcaption {
+		padding: 0em 2em 2em 2.5em;
+		font-size: 1.10em;
+	}
+	figure.effect-ruby h2 {
+		margin-top: 0%;
+	}
+		figure.effect-ruby:hover h2 {
+			display: none;
+		}
+	figure.effect-ruby p {
+		margin: 2em 3em 1em 4em;
+		padding: .75em;
+		border: none;
+	}
+
+}
+
+@media only screen and (min-width: 500px) and (max-width: 627px) {
+	.grid figure figcaption {
+		padding: 0em;
+	}
+	.grid figure h2 {
+	font-family: 'Myriad Pro Semibold';
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 30px;
+    font-size: 50px;
+    padding-top: 10%;
+    text-transform: capitalize;
+    display: block;
+	}
+	.grid figure p {
+	font-family: 'Myriad Pro Regular';
+	letter-spacing: 0px;
+	font-size: 16px;
+	line-height: 17px;
+	}
+	figure.effect-ruby h2 {
+		margin-top: 0%;
+	}
+		figure.effect-ruby:hover h2 {
+			display: none;
+		}
+	figure.effect-ruby p {
+		margin: 1em 3em 1em 6em;
+		padding: .50em;
+		border: none;
+	}
+}
+
+@media only screen and (max-width: 499px) {
+	.grid {
+		display: none;
+	}
+	.grid figure {
+		display: none;
+	}
+	.grid figure figcaption {
+		padding: 1em;
+	}
+	.grid figure h2 {
+    display: none;
+	}
+	.grid figure p {
+	font-family: 'Myriad Pro Regular';
+	letter-spacing: 0px;
+	font-size: 13px;
+	line-height: 13px;
+	}
+	figure.effect-ruby p {
+		margin: .5em 3em .5em 6em;
+		padding: .18em;
+		width: 76%;
+	}
+}	
